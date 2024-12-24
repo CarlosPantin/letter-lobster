@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import './LoveLetter.css';
-import audioFile from './kushi.mp3';
 
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +10,6 @@ const LoveLetter = () => {
     setIsOpen(true);
     setTimeout(() => {
       setIsFullSize(true);
-      // Ensuring audio play is directly a result of this user interaction
       if (audioRef.current) {
         audioRef.current.play()
           .then(() => console.log("Playback succeeded"))
@@ -35,12 +33,11 @@ const LoveLetter = () => {
       <div className="flap"></div>
       <div className="body"></div>
       <div className={`letter ${isFullSize ? 'fullSize' : ''}`}>
-        mah dear kundanapu bomma🖤,<br />
-        never have i been so blessed as to fall in love with someone as wonderful as you...<br />i loveeee youuuu :)<br />
-        always yours,<br />
-        @niihaaarrrr
+        My lobster🖤,<br />
+        This Christmas, you light up my world like the twinkling little stars on a winter's night. All I want is to see your smile and be happy. 
+        You are my greatest gift, my warmest hug on the coldest days, and my forever home. I love you endlessly—today, tomorrow, and always.
       </div>
-      <audio ref={audioRef} src={audioFile} onError={(e) => console.error('Audio error:', e.message)} />
+      <audio ref={audioRef} src="path-to-your-audio-file.mp3" />
     </div>
   );
 };
