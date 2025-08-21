@@ -33,7 +33,7 @@ const LoveLetter = () => {
       <div className="flap"></div>
       <div className="body"></div>
       <div className={`letter ${isFullSize ? 'fullSize' : ''}`}>
-        My lobster🖤,<br />
+        My Cute lobster🖤,<br />
         This Christmas, you light up my world like the twinkling little stars on a winter's night. All I want is to see your smile and be happy. 
         You are my greatest gift, my warmest hug on the coldest days, and my forever home. I love you endlessly—today, tomorrow, and always.
       </div>
